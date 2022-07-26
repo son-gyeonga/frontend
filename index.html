@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title> 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+        .mytitle{
+            background-color: green;
+
+            width: 100%;
+            height:250px;
+
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
+
+            color: white;
+
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mytitle>button{
+            width:200px;
+            height:50px;
+
+            background-color: transparent; /*투명한색*/
+            color: white;
+            border-radius: 50px; /*버튼의 테두리라운드*/
+            border:1px solid white; /*흰색줄*/
+
+            margin-top: 10px;
+
+        }
+        .mytitle>button:hover /*버튼에 올리면*/{
+            border:2px solid white;
+        }
+        .mycomment{
+            color: gray;
+        }
+        .wrap{
+            width:1200px;
+            margin:20px auto 0px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+<div class="mytitle">
+    <h1> 내 생애 최고의 영화들</h1>
+    <button>영화 기록하기</button>
+</div>
+<div class="wrap">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="미드나잇인파리.jpg"
+                     class="card-img-top" alt= ... ">
+                <div class="card-body">
+                    <h5 class="card-title">미드나잇인파리</h5>
+                    <p class="card-text">"약혼자 '이네즈'(레이첼 맥아담스)를 두고 홀로 파리의 밤거리를 배회하던 '길'(오웬 윌슨)은 종소리와 함께 홀연히 나타난 차에 올라타게 되고 그곳에서 1920년대를 대표하는 예술가들과 조우하게 된다. 그 날 이후 매일 밤 1920년대로 떠난 '길'은 평소에 동경하던 예술가들과 친구가 되어 꿈 같은 시간을 보내게 되는데...</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p class="mycomment">이 영화를 보면 파리여행을 꿈꾸게된다..🌠</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="노웨이홈.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">스파이더맨_노웨이홈</h5>
+                    <p class="card-text">2021년 12월 15일 개봉한 마블 시네마틱 유니버스의 27번째 장편 영화. 또한 페이즈 4의 4번째 영화이자 마블 스튜디오 스파이더맨 시리즈의 3번째 작품이다. 또 마블 스튜디오 스파이더맨 시리즈의 첫번째 트릴로지인 홈커밍 트릴로지의 마지막 작품이다.</p>
+                    <p>⭐⭐⭐⭐</p>
+                    <p class="mycomment"> 이건 스파이더맨 팬들을 향한 눈물나는 선물같은 영화🥺</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="기생충.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">기생충</h5>
+                    <p class="card-text">전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족. 장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 온 가족의 도움과 기대 속에 박사장(이선균) 집으로 향하는 기우. 글로벌 IT기업 CEO인 박사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)가 기우를 맞이한다. 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니…</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p class="mycomment"> 시나리오, 연출, 배우 모두 좋았다.소름끼치게...⛺</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="알라딘.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">알라딘</h5>
+                    <p class="card-text">키우는 원숭이 아부와 함께 살아가는 아그라바의 좀도둑 알라딘은 어느 날 궁궐을 탈출한 술탄의 딸 자스민에게 한눈에 반한다. 술탄의 자리를 노리고 있는 사악한 마법사 자파는 알라딘을 눈여겨보고 그에게 마법의 램프를 가져다주면 부자로 만들어주겠다고 말한다. 동굴에 들어가서 램프를 찾던 알라딘은 도중에 동굴이 무너지는 바람에 갇히게 된다. 위기에 빠진 알라딘은 램프의 요정 지니와 마법 양탄자의 도움으로 동굴에서 탈출한다. 지니의 주인이 된 알라딘은 지니를 램프에서 구해주겠다고 약속하고, 지니의 힘을 빌어 왕자로 변신해 자스민에게 청혼하기 위해 아그라바로 돌아온다. 알라딘 때문에 자신의 계획이 실패로 돌아갈 위기에 처하자 자파는 알라딘을 붙잡아 바다에 던지는데...</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p class="mycomment">ost가 주는 감동을 잊을수 없어요🧞‍♂</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
